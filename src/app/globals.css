@@ -6,3 +6,24 @@
 .lead{
     margin-left: 1.3rem;
 }
+
+.team__boxes{
+    --bg-image: url(/resources/bfLogo.png);
+    --bg-image-opacity: .45;
+
+    position: relative;
+    isolation: isolate;
+}
+
+.team__boxes::after{
+    content: '';
+    background-image: var(--bg-image);
+    opacity: var(--bg-image-opacity);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    inset: 0;
+    position: absolute;
+    
+
+}
